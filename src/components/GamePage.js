@@ -84,7 +84,7 @@ function GamePage() {
 
   const handlePostRounds = async () => {
     try {
-      await axios.post('http://localhost:5000/api/rounds', rounds);
+      await axios.post('https://wonderwhy-backend.onrender.com/api/rounds', rounds);
       console.log('Rounds saved successfully!');
     } catch (error) {
       console.error('Error saving rounds:', error);

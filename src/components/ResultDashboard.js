@@ -9,7 +9,7 @@ const UserResultsComponent = () => {
 
     const getResults = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/rounds');
+            const response = await fetch('https://wonderwhy-backend.onrender.com/api/rounds');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
