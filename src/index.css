@@ -1,13 +1,124 @@
+/* GamePage.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0746b4, #014cbd, #031072);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fdbb2d;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fdbb2d;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #fdbb2d;
+  border: none;
+  padding: 15px 30px;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffa500;
+}
+
+div {
+  color: white;
+}
+
+.App .MuiAlert-filledSuccess {
+  background-color: #4caf50;
+}
+
+.App .MuiAlert-filledInfo {
+  background-color: #2196f3;
+}
+
+/* Dialog styling */
+.MuiDialog-paper {
+  background-color: #333;
+  color: white;
+}
+
+.MuiDialogTitle-root {
+  font-size: 1.8em;
+  color: #103c83;
+}
+
+.MuiButton-root {
+  background-color: #2d8efd;
+  color: #000;
+}
+
+.MuiButton-root:hover {
+  background-color: #ffa500;
+}
+
+/* Styling the input dialog */
+.MuiDialogContent-root .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.MuiTextField-root .MuiInputBase-input {
+  color: rgb(2, 62, 152);
+}
+
+.MuiTextField-root .MuiInput-underline:before {
+  border-bottom: 2px solid #fdbb2d;
+}
+
+.MuiTextField-root .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid #ffa500;
+}
+
+
+.add-website-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+ 
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
 }
